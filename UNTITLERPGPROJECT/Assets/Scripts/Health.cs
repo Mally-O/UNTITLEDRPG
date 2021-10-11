@@ -19,7 +19,7 @@ public class Health : MonoBehaviour {
      * <param name=""></param>
      * <returns>void</returns>
      */
-    private void _Update_Status() {
+    private void Update() {
         if (health_ <= 0) {
             _Death();
         }

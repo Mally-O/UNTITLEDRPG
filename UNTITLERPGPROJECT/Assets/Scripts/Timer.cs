@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour {
      * <param name=""></param>
      * <returns>void</returns>
      */
-    protected void _Start() {
+    protected void Start() {
         start_ = Time.time;
     }
 
@@ -34,7 +34,7 @@ public class Timer : MonoBehaviour {
      * <param name=""></param>
      * <returns>void</returns>
      */
-    protected void _Update() {
+    protected void Update() {
         // var players[] = FindGameObjectWithTag("player");
         // object players = FindGameObjectWithTag('player');
     }
@@ -46,7 +46,7 @@ public class Timer : MonoBehaviour {
      * <param name=""></param>
      * <returns>void</returns>
      */
-    protected void _Stop() {
+    protected void Stop() {
         end_ = Time.time;
     }
 }
