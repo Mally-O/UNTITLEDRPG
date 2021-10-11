@@ -11,4 +11,6 @@ using UnityEngine.UI;
  * <param name=""></param>
  * <returns>void</returns>
  */
-public class NetworkAnalyzer : MonoBehaviour { }
+
+
+public interface Interactions  { }
