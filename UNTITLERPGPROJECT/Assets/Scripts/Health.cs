@@ -51,7 +51,7 @@ public class Health : MonoBehaviour
          * <param name=""></param>
          * <returns>returns int value representation of health.</returns>
          */
-    public int _GetHealth() const
+    public int _GetHealth()
     {
         return health_;
     }
@@ -64,9 +64,9 @@ public class Health : MonoBehaviour
          * <param name=""></param>
          * <returns>void</returns>
          */
-    public void _SetHealth(int adj_value)
+    public void _SetHealth(int adjValue)
     {
-        health_ += adj_value;
+        health_ += adjValue;
     }
 
 
