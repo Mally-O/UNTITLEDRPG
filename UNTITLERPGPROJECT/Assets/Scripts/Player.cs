@@ -12,9 +12,9 @@ using UnityEngine.UI;
  * <returns>void</returns>
  */
 public class Player : MonoBehaviour {
-    private Health           player_Health_;
-    private PlayerController player_Controls_;
-    private Timer            player_Timer_;
+    private Health           _playerHealth;
+    private PlayerController _playerControls;
+    private Timer            _playerTimer;
 
 
     /*
@@ -24,8 +24,17 @@ public class Player : MonoBehaviour {
      * <returns>void</returns>
      */
     private void Start() {
-        player_Health_ = gameObject.AddComponent<Health>() as Health;
-        player_Controls_ = gameObject.AddComponent<PlayerController>() as PlayerController;
-        player_Timer_ = gameObject.AddComponent<Timer>() as Timer;
+        _playerHealth = gameObject.AddComponent<Health>() as Health;
+        _playerControls = gameObject.AddComponent<PlayerController>() as PlayerController;
+        _playerTimer = gameObject.AddComponent<Timer>() as Timer;
+
+        // Function to call out.
+
+    }
+
+    protected void Update() {
+        if (!_playerHealth.get_death()) {
+
+        }
     }
 }

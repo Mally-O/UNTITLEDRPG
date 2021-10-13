@@ -12,9 +12,9 @@ using UnityEngine.UI;
  * <returns>void</returns>
  */
 public class Timer : MonoBehaviour {
-    private float        start_;
-    private float        end_;
-    private List<Player> player_ids_;
+    private float        _start_time;
+    private float        _end_time;
+    private List<Player> _playerIds;
 
 
     /*
@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour {
      * <returns>void</returns>
      */
     protected void Start() {
-        start_ = Time.time;
+        _start_time = Time.time;
     }
 
 
@@ -47,6 +47,6 @@ public class Timer : MonoBehaviour {
      * <returns>void</returns>
      */
     protected void Stop() {
-        end_ = Time.time;
+        _end_time = Time.time;
     }
 }

@@ -12,11 +12,11 @@ using UnityEngine.UI;
  * <returns>void</returns>
  */
 public class PlayerController : MonoBehaviour {
-    private PlayerMouse  mouse_;
-    private PlayerCamera camera_;
+    private PlayerMouse  _mouse;
+    private PlayerCamera _camera;
 
     void Start() {
-        mouse_  = gameObject.AddComponent<PlayerMouse>() as PlayerMouse;
-        camera_ = gameObject.AddComponent<PlayerCamera>() as PlayerCamera;
+        _mouse  = gameObject.AddComponent<PlayerMouse>() as PlayerMouse;
+        _camera = gameObject.AddComponent<PlayerCamera>() as PlayerCamera;
     }
 }

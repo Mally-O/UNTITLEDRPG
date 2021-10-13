@@ -8,7 +8,8 @@ using UnityEngine;
  */
 public class Health : MonoBehaviour {
     // Entity health property.
-    [SerializeField] private int health_ = 100;
+    [SerializeField] private int  health_  = 100;
+    private                  bool _isAlive = true;
 
 
     /*
@@ -27,6 +28,17 @@ public class Health : MonoBehaviour {
 
 
     /*
+ * <summary>
+ * </summary>
+ * <param name=""></param>
+ * <returns>void</returns>
+ */
+    public bool get_death() {
+        return _isAlive;
+    }
+
+
+    /*
      * <summary>
      *  Method to initiate death sequence in response to
      *  entity's health falling to or below zero.
@@ -35,6 +47,7 @@ public class Health : MonoBehaviour {
      * <returns>void</returns>
      */
     private void _Death() {
+        _isAlive = false;
         Destroy(gameObject);
     }
 
